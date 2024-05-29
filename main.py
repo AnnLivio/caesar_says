@@ -4,11 +4,12 @@ import webbrowser
 def main(page: ft.Page):
     
     def share_by_whatsapp(e):
+        "Share the ciphered text by whatsapp"
         text= the_message.value
         url = f"https://wa.me/?text={text}"
         webbrowser.open(url)
 
-    def encrypt_text(text, key):
+    def encrypt_text(key):
         "Encrypting 'user_text' using 'user_key'"
         new_text = ""
         for char in user_text.value:
@@ -23,9 +24,9 @@ def main(page: ft.Page):
             try:
                 the_key =  int(user_key.value) % 26
                 if e.control == encrypt_b:
-                    encrypt_text(user_text.value, the_key)
+                    encrypt_text(the_key)
                 else:
-                    encrypt_text(user_text.value, -the_key)
+                    encrypt_text(-the_key)
             except:
                 ...
 
