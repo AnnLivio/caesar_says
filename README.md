@@ -6,6 +6,8 @@ A _Caesar Cipher_ application, introducing my first steps with Flet. This classi
   * Two Buttons: "Encrypt" and "Decrypt".
   * A third Button for sharing, wich becomes visible when the user encrypts or decrypts the text.
 
+    [Screen shot](img/screen.png)
+
 ### LIBRARIES
 * _flet_
 * _webbrower_
